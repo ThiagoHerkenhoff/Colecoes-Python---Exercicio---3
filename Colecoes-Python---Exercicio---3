@@ -1,0 +1,13 @@
+# Exercicio - 3: Faça um programa que leia 10 valores, armazene-os em uma lista e apresente quantos
+# valores pares possui.
+
+lista = []
+
+for i in range(10):
+    num = int(input(f'Informe o {i+1} número: '))
+    lista.append(num)
+
+par = [num for num in lista if num % 2 == 0]
+soma_par = len(par)
+
+print(f'A soma dos valores pares informados é de: {soma_par}')
